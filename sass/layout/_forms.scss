@@ -1,0 +1,406 @@
+main{
+    width: 100%;
+    @include breakpoint("tablet"){
+        padding: 32px 40px;
+    }
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    .contenedor{
+        max-width: 1200px;
+        width: 100%;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        @include breakpoint("tablet"){
+            width: 80%;
+        }
+        @include breakpoint("tablethorizontal"){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 100%;
+        }
+        
+        .contenedor-Formulario{
+            
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+            align-self: self-start;
+            align-items: center;
+            h2{
+                text-align: center;
+                background-color: $violeta;
+                max-width: max-content;
+                padding: 10px;
+                color: white;
+            }
+            h3{
+                text-align: center;
+                span{
+                    color:$violeta;
+                }
+            }
+            .alerta{
+                background-color: red;
+                padding: 10px;
+                color: white;
+                margin-top: 20px;
+            }
+        }
+        #formulario{
+            @include breakpoint("desktop"){
+                max-width: 600px;
+            }
+            display: flex;
+            flex-direction: column;
+            gap:12px;
+            width: 100%;
+            padding: 24px;
+            margin-top: 24px;
+            background-color: white;
+            border-radius: 8px;
+
+            .primero{
+                border: 1px solid transparent;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap:12px;
+                font-weight: bold;
+                .nombre-container {
+                    position: relative;
+                    input {
+                        padding: 10px;
+                    }
+                    .placeholder-nombre{
+                        position: absolute;
+                        left: 5px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        color: #999;
+                        transition: 0.6s;
+                        &.active{
+                            transform: translateY(-220%);
+                            color:black;
+                            font-weight: bold;
+                            margin-bottom: 10px;
+                        }
+                    } 
+                }
+                .apellido-container {
+                    position: relative;
+                    input {
+                        padding: 10px;
+                    }
+                    .placeholder-apellido{
+                        position: absolute;
+                        left: 5px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        color: #999;
+                        transition: 0.6s;
+                        &.active{
+                            transform: translateY(-220%);
+                            color:black;
+                            font-weight: bold;
+                            margin-bottom: 10px;
+                        }
+                    } 
+                }
+                .email-container {
+                    position: relative;
+                    input {
+                        padding: 10px;
+                    }
+                    .placeholder-email{
+                        position: absolute;
+                        left: 5px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        color: #999;
+                        transition: 0.6s;
+                        &.active{
+                            transform: translateY(-220%);
+                            color:black;
+                            font-weight: bold;
+                            margin-bottom: 10px;
+                        }
+                    } 
+                }
+                .tel-container {
+                    position: relative;
+                    input {
+                        padding: 10px;
+                    }
+                    .placeholder-tel{
+                        position: absolute;
+                        left: 5px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        color: #999;
+                        transition: 0.6s;
+                        &.active{
+                            transform: translateY(-220%);
+                            color:black;
+                            font-weight: bold;
+                            margin-bottom: 10px;
+                        }
+                    } 
+                }
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    gap:12px;
+                    font-weight:500;
+                    color: black;
+                }
+                input{
+                    border: 1px solid rgb(43, 43, 43);
+                    border-radius: 8px;
+                    padding: 5px 12px;
+                }
+            }
+            .segundo{
+                border: 1px solid transparent;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap:12px;
+                
+                .fecha-container {
+                    position: relative;
+                    input {
+                        padding: 10px;
+                    }
+                    .placeholder-fecha{
+                        position: absolute;
+                        left: 5px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        color: #999;
+                        transition: 0.6s;
+                        &.active{
+                            transform: translateY(-220%);
+                            color:black;
+                            font-weight: bold;
+                            margin-bottom: 10px;
+                        }
+                    } 
+                }
+                .horas-container{
+                    width: max-content;
+                    display: flex;
+                    flex-direction: column;
+                    gap:12px;
+
+                    color: black;
+                    position: relative;
+                    .placeholder-horas{
+                        position:absolute;
+                        left:5px;
+                        transform:translateY(20%);
+                        color: #999;
+                        transition: 0.6s;
+                        &.active{
+                            transform: translateY(-120%);
+                            color:black;
+                            font-weight: bold;
+                            margin-bottom: 10px;
+                        }
+                    }
+                    select{ 
+                        padding: 5px 10px;
+                        border-radius: 8px;
+                        border: 1px solid rgb(43, 43, 43);
+                    }
+                }
+                input{
+                    border: 1px solid rgb(43, 43, 43);
+                    border-radius: 8px;
+                    padding: 5px 12px;
+                }
+                .horas-container{
+                    label{
+                        position: relative;
+                        left: 5px;
+                    }
+                }
+            }
+            .tercero{
+                border: 1px solid transparent;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap:12px;
+                margin:20px 0px 20px 0px;
+                .materiaContenedor{
+                    display: flex;
+                    @include breakpoint("tablet"){
+                        justify-content: space-around;
+                    }
+                    div{
+                        display: flex;
+                        gap: 5px;
+                        
+                    }
+                }
+            }
+            .temario{
+                display: flex;
+                flex-direction: column;
+                gap:12px;
+                color:black;
+                font-weight: bold;
+                label{
+                    position: relative;
+                    left:5px;
+                }
+                #temario{
+                    resize: none;
+                    padding:5px;
+                }
+            }
+            .temario {
+                position: relative;
+                input {
+                    padding: 10px;
+                }
+                .placeholder-temario{
+                    position: absolute;
+                    left: 5px;
+                    top: 50%;
+                    transform: translateY(-200%);
+                    color: #999;
+                    transition: 0.6s;
+                    &.active{
+                        transform: translateY(-370%);
+                        color:black;
+                        font-weight: bold;
+                        margin-bottom: 10px;
+                    }
+                } 
+            }
+            div{
+                display: flex;
+                justify-content: space-between;
+            }
+            #registro{
+                margin-top: 24px;
+                width: 100%;
+                text-align: center;
+                padding: 10px;
+                font-weight: bold;
+                color: white;
+                background-color: $verde;
+                border: none;
+                box-shadow: 0px 2px 2px green;
+                &:hover{
+                    background-color:#77E2B3;
+                }
+            }
+            p{
+                margin-top: 20px;
+                padding: 0px 20px 0px 20px;
+                text-align: center;
+                font-size: 10px;
+                color:grey;
+                span{
+                    color:$rosa;
+                }
+            }
+        }
+        .clases{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 34px;
+            text-align: center;
+            gap:40px;
+            header{
+                display: flex;
+                flex-direction: column;
+                gap:10px;
+                color: black;
+                h2{
+                    text-align: center;
+                    background-color: $violeta;
+                    max-width: max-content;
+                    padding: 10px;
+                    color: white;
+                }
+                span{
+                    color: $violeta;
+                }
+            }
+            .citas{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap:20px;
+                ul{
+                    padding: 20px 50px 20px 50px;
+                    background-color: white;
+                    display: flex;
+                    flex-direction: column;
+                    gap:10px;
+                    li{
+                        display: flex;
+                        text-align: start;
+                        font-weight: bold;
+                        gap:20px;
+                        p{
+                            font-weight: 500;
+                            text-align: start;
+                            color:gray;
+                        }
+                    }
+                }
+                
+                .cont-botones{
+                    width: 100%;
+                    background-color: white;
+                    padding: 20px 50px 20px 50px;
+                    display: flex;
+                    justify-content: space-around;
+                    .eliminar{
+                        border:1px solid transparent;
+                        cursor: pointer;
+                        color: white;
+                        border-radius: 8px;
+                        padding: 5px 20px;
+                        background-color: red;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap:10px;
+                    }
+                    .editar{
+                        cursor: pointer;
+                        border:1px solid transparent;
+                        border-radius: 8px;
+                        color: white;
+                        padding: 10px 20px;
+                        background-color: $violeta;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap:10px;
+                    }
+                    
+                }
+            }
+            
+            @include breakpoint("tablet"){
+                align-self: self-start;
+                font-weight: bold;
+            }
+            @include breakpoint("tablethorizontal"){
+                margin-top: 0px;
+            }
+        }
+    }
+}

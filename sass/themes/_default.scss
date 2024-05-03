@@ -1,0 +1,16 @@
+html * {
+    font-family: $roboto-font;
+}
+ 
+body {
+    overflow-x: hidden;
+    background-image: url(../../img/fondo-mobile.jpg);
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    @include breakpoint("tablet"){
+        background-image: url(../../img/fondo-desktop.jpg);
+    }
+    
+} 

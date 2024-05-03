@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agenda clases particulares</title>
+    <script defer type="module" src="/main.js"></script>
+    
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <article>
+        <h1>Administrador alumnos particulares</h1>
+      </article>
+    </header>
+    <main>
+      <section class="contenedor">
+        <article class="contenedor-Formulario">
+          <h2>Seguimiento Alumnos</h2>
+          <h3>Añade tus clases y <span>administralas</span></h3>
+          <form action="#" method="get" autocomplete="on" id="formulario">
+          
+            <fieldset class="primero">
+              <div class="nombre-container">
+                <label for="nombre" class="placeholder-nombre">Nombre</label>
+                <input name="nombre" id="nombre" >
+              </div>
+              <div class="apellido-container">
+                <label for="apellido" class="placeholder-apellido">Apellido</label>
+                <input name="apellido" id="apellido" >
+              </div>
+              <div class="email-container">
+                <label for="email" class="placeholder-email">Email</label>
+                <input type="email" name="email" id="email" >
+              </div>
+              <div class="tel-container">
+                <label for="tel" class="placeholder-tel">Número contacto</label>
+                <input type="number" name="telefono" id="tel" >
+              </div>
+            </fieldset>
+            <fieldset class="segundo">
+              <div class="fecha-container">
+                <label for="fecha" class="placeholder-fecha">Fecha</label>
+                <input type="text" name="fecha" id="fecha">
+              </div>
+              <div class="horas-container">
+                <label for="horas" class="placeholder-horas">Hora</label>
+                <select name="horas" id="horas">
+                  <option disabled selected></option>
+                  <option value="09:00 AM">09:00 AM</option>
+                  <option value="10:00 AM">10:00 AM</option>
+                  <option value="11:00 AM">11:00 AM</option>
+                  <option value="12:00 PM">12:00 PM</option>
+                  <option value="16:00 PM">16:00 PM</option>
+                  <option value="17:00 PM">17:00 PM</option>
+                  <option value="18:00 PM">18:00 PM</option>
+                  <option value="19:00 PM">19:00 PM</option>
+                  <option value="20:00 PM">20:00 PM</option>
+                </select>
+              </div>
+            </fieldset>
+            <fieldset class="tercero">
+              <div class="materiaContenedor">
+                <div>
+                  <label for="ingles">Ingles</label>
+                  <input type="radio" value="Ingles" name="materia" id="ingles" checked>
+                </div>
+                <div>
+                  <label for="castellano">Castellano</label>
+                  <input type="radio" value="Castellano" name="materia" id="castellano" >
+                </div>
+                <div>
+                  <label for="aleman">Alemán</label>
+                  <input type="radio" value="Aleman" name="materia" id="aleman" >
+                </div>
+              </div>
+              
+            </fieldset>
+            <div class="temario">
+              <label for="temario" class="placeholder-temario">Temario a tratar</label>
+              <textarea name="temario" id="temario" cols="20" rows="5" ></textarea>
+            </div>
+            
+            
+            <button id="registro">Registrar clase</button>
+            <p>Al hacer clic en el botón, estás aceptando nuestros <span>Términos y Servicios</span></p>
+          </form>
+        </article>
+
+        <article class="clases">
+          <header>
+            <h2>Listado Alumnos</h2>
+            <h3>Administra tus <span>alumnos y clases</span></h3>
+          </header>
+          <div class="citas">
+            <p>No tienes ninguna clase anotada</p>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer></footer>
+    
+  </body>
+</html>

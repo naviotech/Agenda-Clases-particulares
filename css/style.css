@@ -1,0 +1,497 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../../fonts/icomoon.eot?ktory4");
+  src: url("../../fonts/icomoon.eot?ktory4#iefix") format("embedded-opentype"), url("../../fonts/icomoon.ttf?ktory4") format("truetype"), url("../../fonts/icomoon.woff?ktory4") format("woff"), url("../../fonts/icomoon.svg?ktory4#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-close:before {
+  content: "\f00d";
+}
+
+.icon-pencil:before {
+  content: "\f040";
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+@media (min-width: 768px) {
+  main {
+    padding: 32px 40px;
+  }
+}
+main .contenedor {
+  max-width: 1200px;
+  width: 100%;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+@media (min-width: 768px) {
+  main .contenedor {
+    width: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  main .contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+}
+main .contenedor .contenedor-Formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-self: self-start;
+  align-items: center;
+}
+main .contenedor .contenedor-Formulario h2 {
+  text-align: center;
+  background-color: #5E54A4;
+  max-width: max-content;
+  padding: 10px;
+  color: white;
+}
+main .contenedor .contenedor-Formulario h3 {
+  text-align: center;
+}
+main .contenedor .contenedor-Formulario h3 span {
+  color: #5E54A4;
+}
+main .contenedor .contenedor-Formulario .alerta {
+  background-color: red;
+  padding: 10px;
+  color: white;
+  margin-top: 20px;
+}
+main .contenedor #formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  padding: 24px;
+  margin-top: 24px;
+  background-color: white;
+  border-radius: 8px;
+}
+@media (min-width: 1200px) {
+  main .contenedor #formulario {
+    max-width: 600px;
+  }
+}
+main .contenedor #formulario .primero {
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  font-weight: bold;
+}
+main .contenedor #formulario .primero .nombre-container {
+  position: relative;
+}
+main .contenedor #formulario .primero .nombre-container input {
+  padding: 10px;
+}
+main .contenedor #formulario .primero .nombre-container .placeholder-nombre {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  transition: 0.6s;
+}
+main .contenedor #formulario .primero .nombre-container .placeholder-nombre.active {
+  transform: translateY(-220%);
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+main .contenedor #formulario .primero .apellido-container {
+  position: relative;
+}
+main .contenedor #formulario .primero .apellido-container input {
+  padding: 10px;
+}
+main .contenedor #formulario .primero .apellido-container .placeholder-apellido {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  transition: 0.6s;
+}
+main .contenedor #formulario .primero .apellido-container .placeholder-apellido.active {
+  transform: translateY(-220%);
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+main .contenedor #formulario .primero .email-container {
+  position: relative;
+}
+main .contenedor #formulario .primero .email-container input {
+  padding: 10px;
+}
+main .contenedor #formulario .primero .email-container .placeholder-email {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  transition: 0.6s;
+}
+main .contenedor #formulario .primero .email-container .placeholder-email.active {
+  transform: translateY(-220%);
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+main .contenedor #formulario .primero .tel-container {
+  position: relative;
+}
+main .contenedor #formulario .primero .tel-container input {
+  padding: 10px;
+}
+main .contenedor #formulario .primero .tel-container .placeholder-tel {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  transition: 0.6s;
+}
+main .contenedor #formulario .primero .tel-container .placeholder-tel.active {
+  transform: translateY(-220%);
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+main .contenedor #formulario .primero div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-weight: 500;
+  color: black;
+}
+main .contenedor #formulario .primero input {
+  border: 1px solid rgb(43, 43, 43);
+  border-radius: 8px;
+  padding: 5px 12px;
+}
+main .contenedor #formulario .segundo {
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+}
+main .contenedor #formulario .segundo .fecha-container {
+  position: relative;
+}
+main .contenedor #formulario .segundo .fecha-container input {
+  padding: 10px;
+}
+main .contenedor #formulario .segundo .fecha-container .placeholder-fecha {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  transition: 0.6s;
+}
+main .contenedor #formulario .segundo .fecha-container .placeholder-fecha.active {
+  transform: translateY(-220%);
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+main .contenedor #formulario .segundo .horas-container {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: black;
+  position: relative;
+}
+main .contenedor #formulario .segundo .horas-container .placeholder-horas {
+  position: absolute;
+  left: 5px;
+  transform: translateY(20%);
+  color: #999;
+  transition: 0.6s;
+}
+main .contenedor #formulario .segundo .horas-container .placeholder-horas.active {
+  transform: translateY(-120%);
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+main .contenedor #formulario .segundo .horas-container select {
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid rgb(43, 43, 43);
+}
+main .contenedor #formulario .segundo input {
+  border: 1px solid rgb(43, 43, 43);
+  border-radius: 8px;
+  padding: 5px 12px;
+}
+main .contenedor #formulario .segundo .horas-container label {
+  position: relative;
+  left: 5px;
+}
+main .contenedor #formulario .tercero {
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 20px 0px 20px 0px;
+}
+main .contenedor #formulario .tercero .materiaContenedor {
+  display: flex;
+}
+@media (min-width: 768px) {
+  main .contenedor #formulario .tercero .materiaContenedor {
+    justify-content: space-around;
+  }
+}
+main .contenedor #formulario .tercero .materiaContenedor div {
+  display: flex;
+  gap: 5px;
+}
+main .contenedor #formulario .temario {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: black;
+  font-weight: bold;
+}
+main .contenedor #formulario .temario label {
+  position: relative;
+  left: 5px;
+}
+main .contenedor #formulario .temario #temario {
+  resize: none;
+  padding: 5px;
+}
+main .contenedor #formulario .temario {
+  position: relative;
+}
+main .contenedor #formulario .temario input {
+  padding: 10px;
+}
+main .contenedor #formulario .temario .placeholder-temario {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-200%);
+  color: #999;
+  transition: 0.6s;
+}
+main .contenedor #formulario .temario .placeholder-temario.active {
+  transform: translateY(-370%);
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+main .contenedor #formulario div {
+  display: flex;
+  justify-content: space-between;
+}
+main .contenedor #formulario #registro {
+  margin-top: 24px;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+  background-color: #38CC8B;
+  border: none;
+  box-shadow: 0px 2px 2px green;
+}
+main .contenedor #formulario #registro:hover {
+  background-color: #77E2B3;
+}
+main .contenedor #formulario p {
+  margin-top: 20px;
+  padding: 0px 20px 0px 20px;
+  text-align: center;
+  font-size: 10px;
+  color: grey;
+}
+main .contenedor #formulario p span {
+  color: #FF7979;
+}
+main .contenedor .clases {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 34px;
+  text-align: center;
+  gap: 40px;
+}
+main .contenedor .clases header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: black;
+}
+main .contenedor .clases header h2 {
+  text-align: center;
+  background-color: #5E54A4;
+  max-width: max-content;
+  padding: 10px;
+  color: white;
+}
+main .contenedor .clases header span {
+  color: #5E54A4;
+}
+main .contenedor .clases .citas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .contenedor .clases .citas ul {
+  padding: 20px 50px 20px 50px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .contenedor .clases .citas ul li {
+  display: flex;
+  text-align: start;
+  font-weight: bold;
+  gap: 20px;
+}
+main .contenedor .clases .citas ul li p {
+  font-weight: 500;
+  text-align: start;
+  color: gray;
+}
+main .contenedor .clases .citas .cont-botones {
+  width: 100%;
+  background-color: white;
+  padding: 20px 50px 20px 50px;
+  display: flex;
+  justify-content: space-around;
+}
+main .contenedor .clases .citas .cont-botones .eliminar {
+  border: 1px solid transparent;
+  cursor: pointer;
+  color: white;
+  border-radius: 8px;
+  padding: 5px 20px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+main .contenedor .clases .citas .cont-botones .editar {
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: white;
+  padding: 10px 20px;
+  background-color: #5E54A4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+@media (min-width: 768px) {
+  main .contenedor .clases {
+    align-self: self-start;
+    font-weight: bold;
+  }
+}
+@media (min-width: 1024px) {
+  main .contenedor .clases {
+    margin-top: 0px;
+  }
+}
+
+header {
+  width: 100%;
+  display: flex;
+  place-items: center;
+}
+header article {
+  width: 100%;
+  padding: 88px 24px 0px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  header article {
+    padding: 32px 40px;
+  }
+}
+header article h1 {
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 34px;
+  background-color: #5E54A4;
+  width: max-content;
+}
+@media (min-width: 768px) {
+  header article h1 {
+    padding: 15px;
+  }
+}
+
+html * {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  background-image: url(../../img/fondo-mobile.jpg);
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+@media (min-width: 768px) {
+  body {
+    background-image: url(../../img/fondo-desktop.jpg);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
