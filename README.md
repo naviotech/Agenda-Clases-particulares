@@ -12,7 +12,7 @@
 
 La agenda ofrece las siguientes características:
 
-- **Registro de clases**: Añade nuevas clases a tu agenda, especificando fechas, horarios, ubicaciones y detalles relevantes.
+- **Registro de clases**: Añade nuevas clases a tu agenda, especificando fechas, horarios y detalles relevantes.
   
 - **Edición de clases**: Modifica cualquier clase existente en tu agenda, permitiéndote realizar ajustes o modificaciones según sea necesario.
 
