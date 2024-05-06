@@ -265,8 +265,7 @@ class AdminAlumnos {
 
 const Administrador = new AdminAlumnos();
 
-function vaciarHtml(){
-        
+function vaciarHtml(){  
     while(sitioInyeccion.firstChild){
         sitioInyeccion.removeChild(sitioInyeccion.firstChild)
     }
@@ -378,7 +377,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const listActualizada = localStorage.getItem('lista');
     if(listActualizada){
         const contenido = JSON.parse(listActualizada);
-        Administrador.listaLocal(contenido)
-        Administrador.inyeccionDom()
+        if(contenido.length > 0){
+            Administrador.listaLocal(contenido)
+            Administrador.inyeccionDom()
+        }
     }
 })
