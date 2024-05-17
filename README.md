@@ -21,7 +21,6 @@ La agenda ofrece las siguientes características:
 ## Tecnologías Utilizadas
 
 - HTML, CSS y JavaScript: La aplicación está desarrollada utilizando las tecnologías web estándar: HTML para la estructura, CSS para el diseño y JavaScript para la lógica y la interactividad.
-- HTML5: Lenguaje de marcado para estructurar y presentar contenido en la web.
 - Vite: Se ha utilizado Vite como herramienta de compilación para el desarrollo rápido y eficiente de la aplicación.
 - Sass: Se ha integrado Sass para la generación de estilos CSS de manera más eficiente y mantenible.
 
